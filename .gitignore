@@ -6,3 +6,6 @@
 /.vs
 /WasteBagsThrowTripsCalculator/TestProject/bin/Debug/net6.0
 /WasteBagsThrowTripsCalculator/TestProject/obj
+/TestProject/bin/Debug/net6.0
+/TestProject/obj
+/WasteBagsThrowTripsCalculator/bin/Debug/net6.0
