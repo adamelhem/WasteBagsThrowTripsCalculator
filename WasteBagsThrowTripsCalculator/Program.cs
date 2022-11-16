@@ -3,7 +3,7 @@ var bagsAmount = int.Parse(Console.ReadLine());
 var inputs = new List<bag>();
 for (var i = bagsAmount; i > 0; i--)
 {
-    inputs.Add(new bag { Id = i, weight = float.Parse(Console.ReadLine()) });
+    inputs.Add(new bag { Id = i, Weight = float.Parse(Console.ReadLine()) });
 }
 
-Console.WriteLine(new WasteBagsServer(inputs).CalculateTrips());
+Console.WriteLine(string.Join('>', new WasteBagsServer(inputs).CalculateTrips()));
