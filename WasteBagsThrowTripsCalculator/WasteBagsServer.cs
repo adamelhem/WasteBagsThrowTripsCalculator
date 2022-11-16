@@ -1,16 +1,13 @@
-using System.Security.Cryptography.X509Certificates;
-
 public class WasteBagsServer
 {
     private float _maxWeight = 0;
-    private List<bag> _input;
 	private List<List<bag>> _output;
     private List<bag> _bagsStillNeedToThrow;
 
     public WasteBagsServer(List<bag> input, float maxWeight)
     {
-        _input = input;
-        _output = new List<bag>();
+        _bagsStillNeedToThrow = input;
+        _output = new List<List<bag>>();
         _maxWeight = maxWeight;
     }
 
